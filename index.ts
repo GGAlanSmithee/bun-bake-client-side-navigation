@@ -16,9 +16,8 @@ wipDevServerExpectHugeBreakingChanges({
   // routes must be statically known so production
   // builds can prepare all required assets.
   routes: [
-    { pattern: "/", entrypoint: "./route.tsx" },
-    // { pattern: "/", entrypoint: "./pages/home/home.route.tsx" },
-    // { pattern: "/about", entrypoint: "./pages/about/about.route.tsx" },
+    { pattern: "/", entrypoint: "./pages/home/home.route.tsx" },
+    { pattern: "/about", entrypoint: "./pages/about/about.route.tsx" },
   ],
   // for framework authors, attach your framework
   // via the interface described in `bake.d.ts`

@@ -13,7 +13,7 @@
   "dependencies": {
     "react": "0.0.0-experimental-1631855f-20241023",
     "react-dom": "0.0.0-experimental-1631855f-20241023",
-    "react-refresh": "^0.0.0-experimental-cae764ce-20241025",
+    "react-refresh": "0.0.0-experimental-1631855f-20241023",
     "react-server-dom-webpack": "0.0.0-experimental-1631855f-20241023"
   }
 }

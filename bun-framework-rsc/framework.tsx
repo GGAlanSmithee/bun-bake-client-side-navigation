@@ -7,9 +7,7 @@ export function react(): Bake.Framework {
   return {
     clientEntryPoint: require.resolve("./client.tsx"),
     serverEntryPoint: require.resolve("./server.tsx"),
-    reactFastRefresh: {
-      importSource: "react-refresh/runtime",
-    },
+    reactFastRefresh: true,
     serverComponents: {
       separateSSRGraph: true,
       serverRegisterClientReferenceExport: "registerClientReference",

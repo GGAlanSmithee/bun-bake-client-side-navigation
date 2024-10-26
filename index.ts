@@ -10,12 +10,17 @@ declare module "bun" {
 }
 
 import { wipDevServerExpectHugeBreakingChanges } from "bun"
+import { react } from "./bun-framework-rsc/framework"
 
 wipDevServerExpectHugeBreakingChanges({
   // routes must be statically known so production
   // builds can prepare all required assets.
-  routes: [{ pattern: "/", entrypoint: "./route.tsx" }],
+  routes: [
+    { pattern: "/", entrypoint: "./route.tsx" },
+    // { pattern: "/", entrypoint: "./pages/home/home.route.tsx" },
+    // { pattern: "/about", entrypoint: "./pages/about/about.route.tsx" },
+  ],
   // for framework authors, attach your framework
   // via the interface described in `bake.d.ts`
-  framework: "react-server-components",
+  framework: react(), // "react-server-components",
 })

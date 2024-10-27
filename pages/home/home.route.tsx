@@ -1,5 +1,5 @@
 import { Nav } from "../../components/nav"
-import { HomePage } from "./home.page"
+// import { HomePage } from "./home.page"
 
 const HomeRoute = () => {
   return (
@@ -13,7 +13,7 @@ const HomeRoute = () => {
       <div>Server-Side rendered Home Route</div>
 
       <div>
-        <HomePage />
+        {/* <HomePage /> */}
       </div>
     </div>
   )

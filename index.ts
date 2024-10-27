@@ -10,7 +10,7 @@ declare module "bun" {
 }
 
 import { wipDevServerExpectHugeBreakingChanges } from "bun"
-import { react } from "./bun-framework-rsc/framework"
+import { react } from "./bun-framework-rsc"
 
 wipDevServerExpectHugeBreakingChanges({
   // routes must be statically known so production
